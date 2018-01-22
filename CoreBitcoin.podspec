@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.author       = { "Oleg Andreev" => "oleganza@gmail.com" }
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.9'
+  s.static_framework = true
   s.source       = { :git => "https://github.com/oleganza/CoreBitcoin.git", :tag => s.version.to_s }
   s.source_files = 'CoreBitcoin'
   s.exclude_files = ['CoreBitcoin/**/*+Tests.{h,m}', 'CoreBitcoin/BTCScriptTestData.h']
