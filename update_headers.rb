@@ -8,7 +8,7 @@ header_ext_filenames = []
 # Collect all headers and update their license/authorship notices.
 Dir.glob("CoreBitcoin/**/*.h").each do |header_filename|
   name = header_filename.gsub("CoreBitcoin/", "")
-  if !name["CoreBitcoin"] && !name["+Tests"]
+  if !name["CoreBitcoin"] && !name["+Tests"] && !name["BTCScriptTestData"]
     if name["+"]
       header_ext_filenames << header_filename
     else
